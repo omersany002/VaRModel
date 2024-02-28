@@ -3,6 +3,11 @@
 ## Overview
 This project implements a Value at Risk (VaR) model using Monte Carlo simulation to estimate the potential loss in the value of a portfolio over a specified time horizon and confidence interval. The model considers different portfolio allocation strategies, including minimum variance and optimal Sharpe ratio portfolios, to provide insights into portfolio risk management.
 
+## Author
+**Omer Sany Prakash**  
+Graduate Student  
+Oklahoma State University
+
 ## Installation
 To run this project, you need to have Python installed along with the following libraries:
 
