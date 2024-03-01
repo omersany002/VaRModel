@@ -80,7 +80,7 @@ class VaRModel:
     """
     A class to represent a Value at Risk (VaR) model using Monte Carlo simulation.
     """
-    def __init__(self, tickers, sims, port_val, days, conf_int,  seed, port_type='E'):
+    def __init__(self, tickers, sims, port_val, days, conf_int, port_type='E'):
         """
         Constructs all the necessary attributes for the VaR_model object.
         """
@@ -90,7 +90,6 @@ class VaRModel:
         self.days = days
         self.conf_int = conf_int
         self.port_type = port_type
-        self.seed = seed
         self.mc_returns = self.monte_carlo()
         self.var = None
 
@@ -116,7 +115,6 @@ class VaRModel:
         """
         Runs a Monte Carlo simulation to generate a distribution of potential portfolio returns.
         """
-        np.random.seed(self.seed)
         p_return, p_risk= self.portfolio_summ()
         returns = []
         for _ in range(self.simulations):
@@ -170,14 +168,13 @@ SIMULATIONS = 1_000_000  # Number of simulations to run
 PORTFOLIO_VALUE = 1_000_000  # Total value of the portfolio
 DAYS = 1  # Time horizon for the VaR calculation (in days)
 CONFIDENCE_INTERVAL = .95  # Confidence level for the VaR calculation
-SEED = 1998
 
 # Specifying portfolio type
 # 'MINIMUM_VARIANCE' for minimum variance portfolio
 # 'OPTIMAL_SHARPE' for portfolio with optimal Sharpe ratio
-# Leave empty for equal weighted portfolio by default
+# 'EQUAL' for equal weighted portfolio by default
 PORT_TYPE = 'OPTIMAL_SHARPE'
 
 # Creating an instance of the class and running the model
-VaR = VaRModel(TICKERS, SIMULATIONS, PORTFOLIO_VALUE, DAYS, CONFIDENCE_INTERVAL, SEED, PORT_TYPE)
+VaR = VaRModel(TICKERS, SIMULATIONS, PORTFOLIO_VALUE, DAYS, CONFIDENCE_INTERVAL, PORT_TYPE)
 VaR.summary()
