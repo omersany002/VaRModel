@@ -31,7 +31,7 @@ Update the PATH variable in the script to point to the correct file path of the 
 Customize the simulation parameters such as SIMULATIONS, PORTFOLIO_VALUE, DAYS, CONFIDENCE_INTERVAL, SEED, and PORT_TYPE according to your requirements.
 Run the script.
 ```python
-VaR = VaRModel(TICKERS, SIMULATIONS, PORTFOLIO_VALUE, DAYS, CONFIDENCE_INTERVAL, SEED, PORT_TYPE)
+VaR = VaRModel(TICKERS, SIMULATIONS, PORTFOLIO_VALUE, DAYS, CONFIDENCE_INTERVAL, PORT_TYPE)
 VaR.summary()
 ```
 
