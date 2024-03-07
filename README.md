@@ -61,5 +61,3 @@ VaR.summary()
 ### Visualization
 - The script visualizes the simulated portfolio returns distribution using a histogram and highlights the VaR level for the specified confidence interval.
 
-## Conclusion
-This project offers a robust framework for assessing portfolio risk through the estimation of VaR using Monte Carlo simulation. By considering different portfolio allocation strategies, users can make informed decisions regarding risk management and asset allocation. The visualization provided enhances understanding of the distribution of potential portfolio returns, aiding in risk assessment and decision-making processes.
