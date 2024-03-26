@@ -34,9 +34,10 @@ python main.py
 ```
 
 # Project Structure
-
-- `index-holdings-xly.xls`: Excel file containing the consumer discretionary (XLY) fund summary.
-- `var_model.py`: Python script implementing the VaR model and portfolio optimization classes.
+- **main.py**: Python script to execute the VaR model. It reads configuration parameters from `config.yaml`.
+- **risk_model.py**: Python module containing the `VarModel` class, which encapsulates the VaR model logic.
+- **index-holdings-xly.xls**: Excel file containing the consumer discretionary (XLY) fund summary.
+- **config.yaml**: Configuration file specifying tickers, risk engine parameters, and historical period for data retrieval.
 - `README.md`: Markdown file providing an overview of the project.
 
 ## Detailed Explanation
