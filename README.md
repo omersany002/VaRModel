@@ -27,12 +27,10 @@ pip install scipy numba pandas yfinance numpy matplotlib
 ## Usage
 Clone the repository to your local machine.
 Ensure you have the necessary Python dependencies installed (see Installation section).
-Update the PATH variable in the script to point to the correct file path of the consumer discretionary (XLY) fund summary.
-Customize the simulation parameters such as SIMULATIONS, PORTFOLIO_VALUE, DAYS, CONFIDENCE_INTERVAL, SEED, and PORT_TYPE according to your requirements.
-Run the script.
+Update the config.yaml file with your assumptions.
+Execute the main file:
 ```python
-VaR = VaRModel(TICKERS, SIMULATIONS, PORTFOLIO_VALUE, DAYS, CONFIDENCE_INTERVAL, PORT_TYPE)
-VaR.summary()
+python main.py
 ```
 
 # Project Structure
