@@ -1,0 +1,6 @@
+risk_model_params:
+  simulations : 1_000_000
+  investment_value : 1_000_000
+  holding_day : 1
+  confidence_interval : .95
+  portfolio_type : Sharpe
