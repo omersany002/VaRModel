@@ -58,5 +58,16 @@ python main.py
 - CTE indicates the average loss in the tail of the distribution beyond VaR.
 
 ### Visualization
-- The script visualizes the simulated portfolio returns distribution using a histogram and highlights the VaR level for the specified confidence interval.
+The histogram below displays the distribution of portfolio returns, with the VaR at the 95.0% confidence level high lighted in red.
+![var](https://github.com/user-attachments/assets/1957a4a2-eced-4a9f-8470-c3f4294fdc42)
+
+### Risk Metrices Output
+Below are the calculated risk metrics for the portfolio:
+
+- **Confidence Level:** 95.0%  
+- **Window:** 1 Day(s)  
+- **Value at Risk (VaR):** $189,597  
+- **Tail Value-at-Risk (TVaR):** -$10,334  
+- **Conditional Tail Expectation (CTE):** $259,845 
+
 
