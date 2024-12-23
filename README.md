@@ -58,7 +58,8 @@ python main.py
 - CTE indicates the average loss in the tail of the distribution beyond VaR.
 
 ### Visualization
-The histogram below displays the distribution of portfolio returns, with the VaR at the 95.0% confidence level high lighted in red.
+The simulation was ran assuming a portfolio of $1,000,000. The histogram below displays the distribution of portfolio returns, with the VaR at the 95.0% confidence level high lighted in red.
+
 ![var](https://github.com/user-attachments/assets/1957a4a2-eced-4a9f-8470-c3f4294fdc42)
 
 ### Risk Metrices Output
